@@ -13,14 +13,14 @@ api = Api(app)
 
 
 ''' Definição de link das URLs com a API Controller... '''
-api.add_resource(ProdutoListAPI, '/api/safra')
-api.add_resource(ProdutoAPI, '/api/safra/<int:id>')
+api.add_resource(ProdutoListAPI, '/api/produto')
+api.add_resource(ProdutoAPI, '/api/produto/<int:id>')
 
 api.add_resource(ServicoListAPI, '/api/servico')
 api.add_resource(ServicoAPI, '/api/servico/<int:id>')
 
-api.add_resource(SafraListAPI, '/api/produto')
-api.add_resource(SafraAPI, '/api/produto/<int:id>')
+api.add_resource(SafraListAPI, '/api/safra')
+api.add_resource(SafraAPI, '/api/safra/<int:id>')
 
 
 if __name__ == '__main__':
